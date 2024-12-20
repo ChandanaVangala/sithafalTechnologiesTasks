@@ -1,0 +1,42 @@
+Packages to install:
+
+1. LangChain and Extensions
+--> pip install langchain langchain_community langchain_groq langchain-huggingface
+2. Unstructured Data Processing
+--> pip install unstructured
+3. FAISS (Vector Similarity Search)
+--> pip install faiss-cpu
+4. Environment Variable Management
+--> pip install python-dotenv
+5. Azure AI Services (Optional, if needed)
+--> pip install azure-ai-inference
+
+
+
+Modules to be imported:
+
+1. Python Built-In Modules
+os: For environment variable management and file paths.
+time: To introduce delays during processing.
+
+2. Environment Variable Management
+from dotenv import load_dotenv: To load environment variables from a .env file into the application.
+
+3. LangChain Components
+from langchain_huggingface import HuggingFaceEmbeddings: For creating embeddings using Hugging Face models.
+from langchain.document_loaders import UnstructuredURLLoader: For loading data from web pages or URLs.
+from langchain.text_splitter import RecursiveCharacterTextSplitter: For splitting long text into manageable chunks.
+from langchain.vectorstores import FAISS: For creating and querying a FAISS vector database.
+from langchain_groq import ChatGroq: For integrating Groq AI's models for generating responses.
+from langchain.chains import RetrievalQAWithSourcesChain: For building a retrieval-based question-answering chain with sources.
+
+4. Unstructured Data Processing
+UnstructuredURLLoader: Used to fetch and parse unstructured data from a given URL.
+
+5. Vector Similarity Search
+FAISS: Used for creating a vector index and enabling fast similarity searches.
+
+Requirements: 
+1. API key
+2. Internet Connection
+3. Python version 3.8 or above

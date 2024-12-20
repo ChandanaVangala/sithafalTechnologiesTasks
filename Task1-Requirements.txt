@@ -1,0 +1,12 @@
+These are the primary libraries required for the code. Ensure that all of them are installed in your environment to avoid errors.
+
+1.PyPDF2 (for extracting text from PDF files):
+---pip install PyPDF2
+2.sentence-transformers (for generating sentence embeddings):
+---pip install sentence-transformers
+3.faiss-cpu (for building and searching the vector index using FAISS):
+---pip install faiss-cpu
+4.transformers (for text generation and using pretrained language models like GPT-2):
+---pip install transformers
+5.scikit-learn (for cosine similarity computation):
+---pip install scikit-learn
